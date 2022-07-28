@@ -1,13 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Modulo 2</title>
-</head>
-<body>
+  </head>
+  <body>
+
+    <header id="indice">
+      <h1>Módulo 2</h1>
+      <nav class="navbar">
+          <ol>
+            <h3>Contenido</h3>
+            <li>
+              <a href="#formularios">Formularios</a>
+              <ol>
+                <li><a href="#teoriaFormularios">Teoría</a></li>
+                <li><a href="#practica1">Práctica 1</a></li>
+                <li><a href="#practica2">Práctica 2</a></li>
+              </ol>
+            </li>
+            <li>
+                <a href="#css">Introducción a CSS</a>
+                <ol>
+                    <li><a href="#teoriaCSS">Teoría</a></li>
+                    <li><a href="#practicaCSS">Práctica</a></li>
+                </ol>
+            </li>
+          </ol>
+      </nav>
+    </header>
+
+    <main>
+      <article id="formularios">
+        <section id="teoriaFormularios">
+          <h2>Formularios</h2>
+          <form action="" method="">
+            <ul>
+              <li>
+                <h4>Input</h4>
+                <input type="text" placeholder="Escribe algo" />
+              </li>
+              <li>
+                <h4>Select</h4>
+                <select name="groups" id="groups">
+                  <option value="" selected disabled>Select option</option>
+                  <optgroup label="Fruits">
+                    <option value="">Apple</option>
+                    <option value="">Cherry</option>
+                    <option value="">Lemon</option>
+                  </optgroup>
+                  <optgroup label="Vegetable">
+                    <option value="">Ognion</option>
+                    <option value="">Potato</option>
+                    <option value="">Carrot</option>
+                  </optgroup>
+                </select>
+                <br /><br />
+                <select name="lista" id="lista" multiple size="4">
+                  <option value="" selected disabled>Select option</option>
+                  <option value="">Lemon</option>
+                  <option value="">Apple</option>
+                  <option value="">Cherry</option>
+                  <option value="">Banana</option>
+                  <option value="">Ognion</option>
+                  <option value="">Potato</option>
+                  <option value="">Carrot</option>
+                </select>
+              </li>
+
+              <li>
+                <h4>Textarea</h4>
+                <textarea
+                  name="comentario"
+                  id="comentario"
+                  cols="30"
+                  rows="10"
+                  placeholder="Escribe tu comentario"
+                ></textarea>
+              </li>
+
+              <li>
+                <h4>Etiqueta label</h4>
+                <label for="color">Elige tu color favorito: </label>
+                <input type="color" name="color" id="color" />
+
+                <br /><br />
+                <input type="radio" name="sexo" id="hombre" value="h" />
+                <label for="hombre">Hombre</label>
+                <br /><br />
+                <input type="radio" name="sexo" id="mujer" value="m" />
+                <label for="mujer">Mujer</label>
+                <br /><br />
+                <input type="radio" name="sexo" id="otro" value="o" />
+                <label for="otro">Otro</label>
+              </li>
+
+              <li>
+                <h4>Fieldset</h4>
+                <fieldset>
+                  <legend>Datos Personales</legend>
+                  <label for="nombre">Nombre: </label>
+                  <input type="text" id="nombre" />
+                  <br /><br />
+                  <label for="apellido">Apellido: </label>
+                  <input type="text" id="apellido" />
+                  <br /><br />
+                  <label for="fecha">Fecha de nacimiento: </label>
+                  <input type="date" id="fecha" />
+                  <br /><br />
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>Datos de Contacto</legend>
+                  <label for="telefono">Teléfono: </label>
+                  <input type="tel" id="telefono" />
+                  <br /><br />
+                  <label for="email">Email: </label>
+                  <input type="email" id="email" />
+                </fieldset>
+              </li>
+
+              <li>
+                <h4>Estructura</h4>
+                <ul>
+                  <li>
+                    <label for="t1">
+                      <input type="radio" name="r1" id="t1" value="1" />
+                      Mayor de edad
+                    </label>
+                  </li>
+                  <li>
+                    <label for="t2">
+                      <input type="radio" name="r2" id="t2" value="0" />
+                      Menor de edad
+                    </label>
+                  </li>
+                </ul>
+                <p>
+                  <label for="name">
+                    <span>Nombre: </span>
+                    <input type="text" name="nombre" id="name" />
+                  </label>
+                </p>
+              </li>
+            </ul>
+          </form>
+        </section>
+
+        <section id="practica1">
+          <h3>Práctica 1</h3>
+          <form action="" method="">
+            <fieldset>
+              <br />
+              <legend>Datos del usuario</legend>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+              <br /><br />
+              <label for="">Eres socio?</label>
+              <br />
+              <label for="si">Si, soy socio</label>
+              <input type="radio" name="socio" id="si" value="s" />
+              <label for="si">No soy socio</label>
+              <input type="radio" name="socio" id="no" value="n" />
+              <br /><br />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <br /><br />
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password" />
+              <br /><br />
+            </fieldset>
+
+            <fieldset>
+              <legend>Datos de la reserva</legend>
+              <label for="edad">Edad</label>
+              <select name="" id="">
+                <option value="">Menor de 18</option>
+                <option value="">Mayor de 18</option>
+              </select>
+              <br /><br />
+              <label for="fecha">Seleccione fecha y hora de reserva:</label>
+              <br /><br />
+              <input type="date" name="date" id="date" />
+              <input type="time" name="time" id="time" />
+              <br /><br />
+              <textarea
+                name="comentario"
+                id="comentario"
+                cols="30"
+                rows="10"
+                placeholder="Comentarios"
+              ></textarea>
+              <br /><br />
+            </fieldset>
+          </form>
+        </section>
+
+        <section id="practica2">
+          <h3>Práctica 2</h3>
+          <form action="" method="">
+            <fieldset>
+              <legend>Datos de usuario</legend>
+
+              <label for="nombre">Nombre: </label>
+              <input type="text" name="nombre" id="nombre" />
+              <br /><br />
+              <label for="apellido">Apellido: </label>
+              <input type="text" name="apellido" id="apellido" />
+              <br /><br />
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email" />
+              <br /><br />
+              <label for="tel">Teléfono: </label>
+              <input type="tel" name="tel" id="tel" />
+              <br /><br />
+              <label for="campus">Campus: </label>
+              <select name="campus" id="campus">
+                <option value="">Campus 1</option>
+                <option value="">Campus 2</option>
+                <option value="">Campus 3</option>
+                <option value="">Campus 4</option>
+                <option value="">Campus 5</option>
+              </select>
+              <br /><br />
+              <label for="mensaje"></label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+              <br /><br />
+              <input type="checkbox" name="politica" id="politica" />
+              <label for="politica">Acepto la política de privacidad</label>
+              <br /><br />
+              <input type="submit" value="Enviar" />
+              <br /><br />
+            </fieldset>
+          </form>
+        </section>
+      </article>
+
+      <article id="css">
+        <section id="teoriaCSS">
+            <h2>Introducción a CSS</h2>
+            <ul>
+                <li>
+                    <h4>Opacity</h4>
+                    <div class="imagenes">
+                        <div class="img-item">
+                            <img class="imagen" src="https://picsum.photos/id/684/600/400" alt="">
+                            <p class="text-img">Opacity: 0.2</p>
+                        </div>
     
-</body>
+                        <div class="img-item">
+                            <img class="imagen" src="https://picsum.photos/id/684/600/400" alt="">
+                            <p class="text-img">Opacity: 0.6</p>
+                        </div>
+    
+                        <div class="img-item">
+                            <img class="imagen" src="https://picsum.photos/id/684/600/400" alt="">
+                            <p class="text-img">Opacity: 1</p>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <h4>Colores</h4>
+                    <p class="bg-purple">Texto con background</p>
+                    <p class="bg-purple-transparent">Texto con background transparente</p>
+                    <p class="text-purple">Texto con color</p>
+                </li>
+    
+                <li>
+                    <h4>Propiedades de texto</h4>
+                    <p class="font-weight">font-weight</p>
+                    <p class="font-style">font-style</p>
+                    <p class="text-decoration">text-decoration</p>
+                    <p class="text-transform">text-transform</p>
+                    <p class="letter-spacing">letter-spacing</p>
+                    <p class="text-align-left">text-align-left</p>
+                    <p class="text-align-right">text-align-right</p>
+                    <p class="text-align-center">text-align-center</p>
+                    <p class="text-align-justify">text-align-justify</p>
+                    <p class="line-height">line-height</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="practicaCSS">
+            <h3>Práctica</h3>
+            <div class="curriculum">
+                <h2 class="main-title">Curriculum Vitae de Juan Perez</h2>
+                <div class="curriculum-section">
+                    <h3 class="title">Datos personales</h3>
+                    <ul>
+                        <li><em>Nombre completo:</em> Juan Perez</li>
+                        <li><em>Fecha de nacimiento:</em> 1/5/2000</li>
+                        <li><em>Lugar de nacimiento:</em> Gotham City</li>
+                    </ul>
+                </div>
+
+                <div class="curriculum-section">
+                    <h3 class="title">Formación académica</h3>
+                    <ul>
+                        <li><em>1956-1961:</em> Universidad Nacional de Jujuy</li>
+                        <li><em>1952-1956:</em> Instituto Técnico Jujuy</li>
+                        <li><em>1944-1952:</em> Escuela primaria Santa Rita</li>
+                    </ul>
+                </div>
+
+                <div class="curriculum-section">
+                    <h3 class="title">Experiencia laboral</h3>
+                    <ul>
+                        <li><em>2022-2022:</em> Ayudante de trabajos prácticos</li>
+                        <li><em>2020-2021:</em> Vendedor de repuestos automotores</li>
+                        <li><em>2019-2020:</em> Lavacopas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+        <a href="#indice">Indice</a>
+    </footer>
+  </body>
 </html>

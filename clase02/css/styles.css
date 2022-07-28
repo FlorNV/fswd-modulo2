@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+body {
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset {
+    width: 400px;
+    max-width: 50%;
+    padding: 1.5rem;
+    margin-top: 1.4rem;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content,max-content));
+    justify-content: center;
+    text-align: center;
+}
+
+.imagen {
+    width: 90%;
+}
+
+.img-item:nth-child(1) .imagen {
+    opacity: 0.2;
+}
+
+.img-item:nth-child(2) .imagen {
+    opacity: 0.6;
+}
+
+.img-item:nth-child(3) .imagen {
+    opacity: 1;
+}
+
+.img-item {
+    position: relative;
+}
+
+.text-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    background-color: aqua;
+    padding: 0.5rem;
+}
+
+.bg-purple {
+    background-color: purple;
+    color: white;
+}
+
+.bg-purple-transparent {
+    background-color: rgba(128, 0, 128, 0.5);
+    color: white;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.font-weight {
+    font-weight: 100;
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.text-decoration {
+    text-decoration: underline;
+}
+
+.text-transform {
+    text-transform: uppercase;
+}
+
+.letter-spacing {
+    letter-spacing: 4px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.line-height {
+    line-height: 5;
+    background-color: aquamarine;
+}
+
+/* PRÁCTICA CSS */
+.curriculum {
+    margin: 2rem;
+}
+
+.main-title {
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: 'DM Serif Display', serif;
+    padding-right: 20rem;
+    margin-bottom: 4rem;
+    background-color: #adb5bd;
+    color: #014270;
+}
+
+.curriculum-section {
+    margin-left: 6rem;
+}
+
+.title {
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    word-spacing: 8px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: 'DM Serif Display', serif;
+    color: #772e25;
+}
+
+.curriculum-section ul li {
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.curriculum-section ul li em {
+    font-variant: normal;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
