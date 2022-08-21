@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 3rem 8rem 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://picsum.photos/id/1019/5472/3648');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.6rem;
+    border-radius: 6px;
+    background-color: #00b4d8;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.container {
+    padding: 3rem 5rem;
+}
+
+article {
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+img {
+    float: right;
+    height: 200px;
+    margin: 2rem 0 1rem 2rem;
+    border-radius: 10px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.text-content .wrapper {
+    white-space: nowrap;
+}
+
+.text-content .wrapper h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    /* padding: 1rem 0; */
+    overflow: hidden;
+}
+
+.fade-top {
+    opacity: 0; 
+    transform: translate(0, 10vh);
+    transition: all 1.5s;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.animation {
+    animation: right 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes right {
+    /* 100% { width: 100%; } */
+    from { width: 0; }
+    to { width: 30%; }
+}
+
+footer {
+    text-align: center;
+    padding: 4rem;
+    background-color: #00b4d8;
+    color: #fff;
+}
